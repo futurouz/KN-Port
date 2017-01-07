@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KN - Port</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cantarell', sans-serif;
+        }
+
+        .hero1 {
+            background: url(https://static.pexels.com/photos/38892/pexels-photo-38892.jpeg);
+            background-size: cover;
+            background-position: center center;  h
+        }
+
+        .inner {
+            min-height: 100%;
+            position: relative;
+        }
+
+        .copy {
+            position: absolute;
+            top: 45%;
+            height: 10em;
+            margin-top: -5em;
+            width: 100%;
+        }
+
+        .hero .inner {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .hero h1 {
+          font-size: 100px;
+        }
+        .hero h1,
+        .hero p {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container-fluid"></div>
+
+
+
+
+    <script type="text/javascript" src="app\css\bootstrap-progressbar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.progress .progress-bar').progressbar({
+                display_text: 'fill'
+            });
+            $('.progress-bar').css({
+                'background-color': "#2980b9"
+            });
+        });
+    </script>
+<script type="text/javascript" src="index_bundle.js"></script></body>
+
+</html>
