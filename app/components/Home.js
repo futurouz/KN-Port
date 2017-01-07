@@ -3,7 +3,7 @@ import CoverContainer from '../containers/CoverContainer'
 import Info from './Info'
 import Skill from './Skill'
 import Project from './Project'
-import Footer from './Footer'
+import FooterContainer from '../containers/FooterContainer'
 
 
 function Home(props) {
@@ -13,7 +13,7 @@ function Home(props) {
       <Info />
       <Skill />
       <Project />
-      <Footer />
+      <FooterContainer facebook = {props.facebook} twitter = {props.twitter} instagram = {props.instagram} copy = {props.copy} />
     </div>
   )
 }
