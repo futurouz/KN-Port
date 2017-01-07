@@ -1,15 +1,15 @@
 import React from 'react'
-import Cover from './Cover'
+import CoverContainer from '../containers/CoverContainer'
 import Info from './Info'
 import Skill from './Skill'
 import Project from './Project'
 import Footer from './Footer'
 
 
-function Home() {
+function Home(props) {
   return (
     <div>
-      <Cover />
+      <CoverContainer title = { props.title } subTitle = { props.subTitle } />
       <Info />
       <Skill />
       <Project />

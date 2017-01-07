@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
+import CoverContainer from '../containers/CoverContainer'
 import * as styles from '../styles'
 
-function Cover() {
+function Cover(props) {
   return (
       <div style= {styles.coverStyle}>
         <div className='row'>
           <div className='col-md-12 text-center'>
-            <h1 style = { styles.h1Style } className='wow fadeInUp' data-wow-delay='0.3s'><b>KN</b>-PORT</h1>
-            <p style = { styles.pStyle } className='wow fadeInUp' data-wow-delay='1.5s' data-wow-duration="0.3s">Student & a little Front-End Developer</p>
+            <h1 style = { styles.h1Style } className='wow fadeInUp' data-wow-delay='0.3s'>{props.title}</h1>
+            <p style = { styles.pStyle } className='wow fadeInUp' data-wow-delay='1.5s' data-wow-duration="0.3s">{props.subTitle}</p>
           </div>
         </div>
         <div className='row wow fadeIn' data-wow-delay='2s'>
@@ -17,6 +18,11 @@ function Cover() {
         </div>
       </div>
   )
+}
+
+Cover.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string.isRequired
 }
 
 export default Cover;
