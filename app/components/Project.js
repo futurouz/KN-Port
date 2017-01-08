@@ -1,12 +1,12 @@
 import React from 'react'
 import * as styles from '../styles'
 
-function Project() {
+function Project(props) {
     return (
         <div style={styles.ProjectStyle}>
             <div className='col-md-12 text-center'>
                 <h1 style={styles.h1Project} className='wow fadeInUp' data-wow-delay='0.5s' data-wow-duration='0.3s'>
-                    <b>PRO</b>JECT
+                    { props.title }
                 </h1>
             </div>
             <div className='row'>
@@ -14,7 +14,7 @@ function Project() {
                     <figure>
                         <img src="app\img\wippo.png" alt="Thumb" width="400" height="300"/>
                         <figcaption>
-                            <div>WIP CAMP#8 SIT KMUTT / FRONT-END</div>
+                            <div>{ props.wip }</div>
                         </figcaption>
                     </figure>
                 </div>
@@ -22,7 +22,7 @@ function Project() {
                   <figure>
                       <img src="app\img\sign.PNG" alt="Thumb" width="400" height="300"/>
                       <figcaption>
-                          <div>SIGN UP SIT KMUTT / BACK-END</div>
+                          <div>{ props.sign }</div>
                       </figcaption>
                   </figure>
                 </div>
