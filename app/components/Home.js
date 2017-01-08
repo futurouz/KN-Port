@@ -1,6 +1,6 @@
 import React from 'react'
 import CoverContainer from '../containers/CoverContainer'
-import Info from './Info'
+import InfoContainer from '../containers/InfoContainer'
 import Skill from './Skill'
 import Project from './Project'
 import FooterContainer from '../containers/FooterContainer'
@@ -10,7 +10,7 @@ function Home(props) {
   return (
     <div>
       <CoverContainer title = { props.title } subTitle = { props.subTitle } />
-      <Info />
+      <InfoContainer  hiTitle = { props.hiTitle } name = { props.name } duty = { props.duty } hobby = { props.hobby } />
       <Skill />
       <Project />
       <FooterContainer facebook = {props.facebook} twitter = {props.twitter} instagram = {props.instagram} copy = {props.copy} />
