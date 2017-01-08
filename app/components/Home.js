@@ -1,7 +1,7 @@
 import React from 'react'
 import CoverContainer from '../containers/CoverContainer'
 import InfoContainer from '../containers/InfoContainer'
-import Skill from './Skill'
+import SkillContainer from '../containers/SkillContainer'
 import Project from './Project'
 import FooterContainer from '../containers/FooterContainer'
 
@@ -11,7 +11,7 @@ function Home(props) {
     <div>
       <CoverContainer title = { props.title } subTitle = { props.subTitle } />
       <InfoContainer  hiTitle = { props.hiTitle } name = { props.name } duty = { props.duty } hobby = { props.hobby } />
-      <Skill />
+      <SkillContainer title = { props.header } />
       <Project />
       <FooterContainer facebook = {props.facebook} twitter = {props.twitter} instagram = {props.instagram} copy = {props.copy} />
     </div>

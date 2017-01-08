@@ -1,12 +1,12 @@
 import React from 'react'
 import * as styles from '../styles'
 
-function Skill() {
+function Skill(props) {
   return (
     <div style= {styles.SkillStyle}>
       <div className='row'>
         <div className='col-md-12 text-center'>
-        <h1 style={ styles.h1Skill } className='wow fadeInUp' data-wow-duration='0.6s' data-wow-delay='0.5s'><b>SKILL.</b></h1>
+        <h1 style={ styles.h1Skill } className='wow fadeInUp' data-wow-duration='0.6s' data-wow-delay='0.5s'><b>{props.title}</b></h1>
 
 
         <div className='wow fadeInUp' data-wow-duration='0.6s' data-wow-delay='0.7s'>
