@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import * as styles from '../styles'
 
 function Project(props) {
@@ -29,6 +29,12 @@ function Project(props) {
             </div>
         </div>
     )
+}
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  wip: PropTypes.string.isRequired,
+  sign: PropTypes.string.isRequired
 }
 
 export default Project;
