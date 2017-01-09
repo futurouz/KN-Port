@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes }   from 'react'
 import * as styles from '../styles'
 
 function Skill(props) {
@@ -55,6 +55,10 @@ function Skill(props) {
       </div>
     </div>
   )
+}
+
+Skill.propTypes = {
+  title : PropTypes.string.isRequired
 }
 
 export default Skill
