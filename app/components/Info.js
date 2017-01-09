@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import * as styles from '../styles'
 
 function Info(props) {
@@ -18,5 +18,13 @@ function Info(props) {
     </div>
   )
 }
+
+Info.propTypes = {
+  hiTitle: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  duty: PropTypes.string.isRequired,
+  hobby: PropTypes.string.isRequired
+}
+
 
 export default Info;
